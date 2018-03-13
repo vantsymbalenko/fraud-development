@@ -29,14 +29,14 @@ body {
 }
 
 
-.public__header {
-    -webkit-flex: 0 0 160px;
-    -ms-flex: 0 0 160px;
-    flex: 0 0 160px;
-    text-align: center;
-    padding: 40px 0;
-}
 
+
+.public__content {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding-bottom: 40px;
+}
 
 .sign-in, .sign-up, .reset-password {
     max-width: 490px;

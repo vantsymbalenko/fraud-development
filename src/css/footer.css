@@ -1,0 +1,38 @@
+.public__footer {
+    -webkit-flex: 0 0 44px;
+    -ms-flex: 0 0 44px;
+    flex: 0 0 44px;
+    background-color: #e81a50;
+    text-align: center;
+    line-height: 40px;
+}
+[ui-sref], [ng-click], [on-click], a {
+    cursor: pointer;
+}
+a {
+    color: #4498ee;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+
+.change-language{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+
+}
+.change-language > button{
+    border: none;
+    background: transparent;
+}
+.change-language > button:hover{
+    color: white;
+}
