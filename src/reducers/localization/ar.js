@@ -1,4 +1,5 @@
 export const ar = {
+  arab : "arab",
   lastRun : "Last run at(automaticcally)",
   actions : "Actions",
   description : "Description",
@@ -16,4 +17,4 @@ export const ar = {
   quartelyOption : "Quartely",
   scenariosHeader : "Scenarios",
   addScenario : "Add Scenario"
-}
+};

@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 // import '../../css/header.css';
 import { Link } from 'react-router-dom';
-// import translate from '../../hooks/localization/localization';
+import translate from '../../hooks/localization/localization';
+
 
  class Header extends Component{
+
+
+
     render(){
+
         return(
           <div className="navbar-default sidebar">
+
             {/* <div className="progress">
                 <div className="progress-bar" role="progressbar" style={{width: "25%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
             </div> */}
@@ -23,8 +29,9 @@ import { Link } from 'react-router-dom';
                     <button onClick = {this.changeLanguage}>ARABIC</button>
                 </div> */}
             </div>
+
           </div>
         )
     }
 }
-export default (Header);
+export default translate(Header);

@@ -16,6 +16,7 @@ export default class Inspect extends Component{
   handleShow = () => {
     this.setState({ show: true });
   };
+
   render(){
     return(
 
