@@ -11,9 +11,9 @@ class Footer extends Component{
     render(){
         return(
             <footer className="public__footer">
-                <a>
+                {/* <a>
                     <img src="https://apps.gndf.io/images/svg/logo.svg" height="23" />
-                </a>
+                </a> */}
                 <div className="change-language">
                     <button onClick = {this.changeLanguage}>ENGLISH</button>
                     <button onClick = {this.changeLanguage}>ARABIC</button>

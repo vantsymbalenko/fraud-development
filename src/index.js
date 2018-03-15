@@ -4,6 +4,7 @@ import {Provider} from 'react-redux';
 // import './index.css';
 import App from './App';
 import './css/bootstrap.css';
+// import './css/sb-admin-2.css';
 import registerServiceWorker from './registerServiceWorker';
 import { configStore } from './configStore/configStore';
 

@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import { login } from './login';
-import { language } from './language';
+import { localization } from './localization/localization';
 
 export default combineReducers({
     login,
-    language
+    localization
 });

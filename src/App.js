@@ -5,6 +5,7 @@ import Footer from './containers/Footer/Footer';
 import Header from './containers/Header/Header';
 import Routes from './containers/Routes/Routes';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 class App extends Component {
 
@@ -34,14 +35,14 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => {
-    return  {
-        language : state.language.language,
-        isAuth : state.login.isAuth
-    }
+    // return  {
+    //     language : state.localization.language,
+    //     isAuth : state.login.isAuth
+    // }
 };
 
 const mapStateToDispatch = {
 
 };
 
-export default connect(mapStateToProps, mapStateToDispatch)(App);
+export default withRouter(connect(mapStateToProps, mapStateToDispatch)(App));
