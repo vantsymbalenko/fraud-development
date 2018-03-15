@@ -29,26 +29,27 @@ class Login extends Component{
                 <article className="public__content">
                     <ui-view className="ng-scope"><div className="sign-in ng-scope">
                         <h4 className="sign-in__header">Sign In</h4>
+
                         <div className="sign-in__content">
                             <form name="form"  onSubmit={this.validate} className="ng-pristine ng-invalid ng-invalid-required">
                                 <div className="form-group">
                                     <input
                                         onChange={this.handleInput}
                                         value = {this.state.username}
-                                        name="username" 
+                                        name="username"
                                         type="text"
                                         required="required"
-                                        placeholder="User name" 
+                                        placeholder="User name"
                                         className="form-control form-control-underline ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" />
                                 </div>
                                 <div className="form-group text-right">
                                     <input
                                         onChange={this.handleInput}
                                         value = {this.state.password}
-                                        name="password" 
+                                        name="password"
                                         type="password"
-                                        required="required" 
-                                        placeholder="Password" 
+                                        required="required"
+                                        placeholder="Password"
                                         className="form-control form-control-underline ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" />
                                     <a className="forgotten" >Forgotten password?</a>
                                 </div>

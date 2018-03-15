@@ -7,3 +7,12 @@
     flex-flow: column nowrap;
     min-height: 100vh;
 }
+
+.public_login {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+}

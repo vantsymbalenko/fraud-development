@@ -3,12 +3,11 @@ import './App.css';
 import Login from './containers/Login/Login';
 import Footer from './containers/Footer/Footer';
 import Header from './containers/Header/Header';
+import Routes from './containers/Routes/Routes';
 import { connect } from 'react-redux';
 
 class App extends Component {
-    componentWillMount(){
 
-    }
     componentWillReceiveProps(nextProps){
         if(nextProps.language === "ARABIC" ){
             document.documentElement.style.direction="rtl";
@@ -17,19 +16,27 @@ class App extends Component {
         }
     }
   render() {
-    return (
-        <div className = "public">
-            <Header />
-            <Login />
-            <Footer />
-        </div>
-    );
+    const userIsAuth =
+      <div className = "public">
+        <Header />
+        <Routes />
+        <Footer />
+      </div>;
+
+    const userIsNotAuth =
+      <div className = "public_login">
+        <Login />
+      </div>
+
+    return this.props.isAuth ? userIsAuth : userIsNotAuth;
+
   }
 }
 
 const mapStateToProps = (state) => {
     return  {
-        language : state.language.language
+        language : state.language.language,
+        isAuth : state.login.isAuth
     }
 };
 
