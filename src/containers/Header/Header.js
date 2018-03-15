@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import '../../css/header.css';
 import { Link } from 'react-router-dom';
-import translate from '../../hooks/localization/localization';
+// import translate from '../../hooks/localization/localization';
 
  class Header extends Component{
     render(){
@@ -27,4 +27,4 @@ import translate from '../../hooks/localization/localization';
         )
     }
 }
-export default translate(Header);
+export default (Header);

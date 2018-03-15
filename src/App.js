@@ -35,10 +35,10 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => {
-    // return  {
-    //     language : state.localization.language,
-    //     isAuth : state.login.isAuth
-    // }
+    return  {
+        language : state.localization.language,
+        isAuth : state.login.isAuth
+    }
 };
 
 const mapStateToDispatch = {
