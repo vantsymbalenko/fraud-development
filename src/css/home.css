@@ -1,0 +1,60 @@
+main.main-content{
+    height: 80vh;
+    display: grid;
+    grid-template-areas:
+        "navbar scenario-details scenario-details scenario-details scenario-details scenario-actions scenario-actions";
+}
+
+.main-content__navbar,
+.main-content__scenario-actions,
+.main-content__scenario-details{
+    border-right: 1px solid lightgray;
+}
+
+.main-content__navbar{
+    grid-area: navbar;
+}
+
+.main-content__scenario-details{
+    grid-area: scenario-details;
+}
+
+.main-content__scenario-actions{
+    grid-area: scenario-actions;
+}
+
+.main-content__scenario-list{
+    margin: 0;
+    padding: 0 10px;
+}
+.main-content__scenario-list > li{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    margin: 5px;
+}
+.main-content__scenario-list > li:hover{
+    cursor: pointer;
+    background: lightgray;
+}
+.main-content__scenario-list  li:last-child{
+    margin-top: 10px;
+}
+/*.main-content__scenario-list  > li > span{*/
+/*}*/
+
+.main-content__scenario-details > section {
+    margin-left: 20px;
+}
+
+.main-content__scenario-list-item_active_true{
+    background-color: lightgreen;
+}
+
+.main-content__scenario-details-description{
+    width: 50%;
+    margin-left: 30px;
+}

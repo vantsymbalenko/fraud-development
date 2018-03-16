@@ -1,7 +1,17 @@
-.public__header {
-    -webkit-flex: 0 0 160px;
-    -ms-flex: 0 0 160px;
-    flex: 0 0 160px;
-    text-align: center;
-    padding: 40px 0;
+.public-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 70vw;
+    min-height: 100px;
+    align-content: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.public-header__language > button {
+    border: none;
+    background: transparent;
+}
+.public-header__language > button:hover {
+    color: lightgray;
 }

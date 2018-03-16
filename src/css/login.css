@@ -28,10 +28,15 @@ body {
     background-color: #fff;
 }
 
-
-
+.public_login{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
 
 .public__content {
+    min-width: 490px;
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -39,14 +44,13 @@ body {
 }
 
 .sign-in, .sign-up, .reset-password {
+    position: relative;
     max-width: 490px;
     padding: 40px 70px;
     margin: 0 auto;
     box-shadow: 0 0 5px rgba(0,0,0,0.18);
     font-size: 12px;
 }
-
-
 
 .sign-in__header, .sign-up__header, .reset-password__header {
     text-align: center;
@@ -156,4 +160,18 @@ a {
     color: #fff;
     padding-left: 40px;
     padding-right: 40px;
+}
+
+.change-language{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+
+}
+.change-language > button{
+    border: none;
+    background: transparent;
+}
+.change-language > button:hover {
+    color: lightgray;
 }

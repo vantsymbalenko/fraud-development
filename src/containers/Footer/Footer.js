@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../css/footer.css';
+// import '../../css/footer.css';
 import { setLanguage } from '../../actions/setLanguage';
 import { connect } from 'react-redux';
 

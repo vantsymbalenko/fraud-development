@@ -3,6 +3,7 @@ import '../../css/login.css';
 import { connect } from 'react-redux';
 
 import { login } from '../../actions/actionLogin';
+import {setLanguage} from "../../actions/setLanguage";
 
 class Login extends Component{
     constructor(props){
@@ -24,10 +25,19 @@ class Login extends Component{
         this.props.login(this.state.username, this.state.password);
     };
 
+    changeLanguage = (e) => {
+        this.props.setLanguage(e.target.innerHTML);
+    };
+
+
     render(){
         return(
                 <article className="public__content">
                     <ui-view className="ng-scope"><div className="sign-in ng-scope">
+                        <div className="change-language">
+                            <button onClick = {this.changeLanguage}>ENGLISH</button>
+                            <button onClick = {this.changeLanguage}>ARABIC</button>
+                        </div>
                         <h4 className="sign-in__header">Sign In</h4>
                         <div className="sign-in__content">
                             <form name="form"  onSubmit={this.validate} className="ng-pristine ng-invalid ng-invalid-required">
@@ -74,7 +84,8 @@ const mapStateToProps = (state) => {
 };
 
 const mapStateToDispatch = {
-    login
+    login,
+    setLanguage
 };
 
 export default connect(mapStateToProps, mapStateToDispatch)(Login);

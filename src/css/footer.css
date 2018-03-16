@@ -23,16 +23,3 @@ img {
     border: 0;
 }
 
-.change-language{
-    display: inline-block;
-    position: absolute;
-    right: 10px;
-
-}
-.change-language > button{
-    border: none;
-    background: transparent;
-}
-.change-language > button:hover{
-    color: white;
-}
