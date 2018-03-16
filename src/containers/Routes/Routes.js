@@ -12,7 +12,7 @@ export default class Routes extends Component {
       <div className="home">
         <LeftNavbar />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/scenarios/1" component={Home} />
 
           <Route exact path="/scenarios/:id/" component={RightContent} />
           <Route

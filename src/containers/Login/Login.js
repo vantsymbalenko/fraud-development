@@ -32,7 +32,7 @@ class Login extends Component{
 
                         <div className="sign-in__content">
                             <form name="form"  onSubmit={this.validate} className="ng-pristine ng-invalid ng-invalid-required">
-                                <div className="form-group">
+                                <div className={`form-group ${this.props.error ? 'has-error' : null}`}>
                                     <input
                                         onChange={this.handleInput}
                                         value = {this.state.username}
@@ -41,8 +41,9 @@ class Login extends Component{
                                         required="required"
                                         placeholder="User name"
                                         className="form-control form-control-underline ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" />
+
                                 </div>
-                                <div className="form-group text-right">
+                                <div className={`form-group text-right ${this.props.error ? 'has-error' : null}`}>
                                     <input
                                         onChange={this.handleInput}
                                         value = {this.state.password}
@@ -56,6 +57,7 @@ class Login extends Component{
                                 <div className="btn-actions text-center">
                                     <button type="submit" className="btn btn-submit">Sign in</button>
                                 </div>
+
                                 <div className="btn-actions text-center">
                                     Don't have an account? &nbsp;<a>Sign Up</a>
                                 </div>
@@ -70,7 +72,8 @@ class Login extends Component{
 
 const mapStateToProps = (state) => {
     return {
-        isAuth : state.isAuth
+        isAuth : state.login.isAuth,
+        error : state.login.error
     }
 };
 

@@ -42,7 +42,7 @@ export default class RightContent extends Component {
           intervalTime={this.state.intervalTime}
           spinner={this.state.spinner}
         />
-        <h3 className="section-name">Scenario {this.props.match.params.id}</h3>
+        {/*<h3 className="section-name">Scenario {this.props.match.params.id}</h3>*/}
         <article className="right-content">
           <div className="right-content__details">
             <div className="panel-heading">Description</div>
