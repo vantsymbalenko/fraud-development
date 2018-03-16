@@ -1,7 +1,6 @@
 import { LOGIN, INVALID_LOGIN } from '../constants/login';
 
 export const login = (state = {isAuth : false}, action) => {
-    console.log("action", action)
     switch (action.type){
         case LOGIN : {
             return {
@@ -19,4 +18,6 @@ export const login = (state = {isAuth : false}, action) => {
             return state;
         }
     }
-}
+};
+
+// http://159.65.118.245:81/api/v1/admin/tables
